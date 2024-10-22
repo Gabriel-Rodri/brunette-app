@@ -17,16 +17,23 @@
   /* Ancho máximo para cada card */
 }
 
+.cartButton {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .carouselCard {
     flex: 1 1 calc(60% - 1rem);
     /* Dos columnas en pantallas medianas */
   }
+  .cartButton {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .carouselCard {
-    flex: 1 1 60% - 1rem;
+    flex: 1 1 40% - 1rem;
   }
 
   .customOrderButton {

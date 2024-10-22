@@ -1,11 +1,14 @@
 .navbar {
-  background-color: rgb(255, 231, 169); /* Fondo en tonos suaves */
+  background-color: rgb(255, 231, 169);
+  /* Fondo en tonos suaves */
   padding: 0.5rem 1rem;
   display: flex;
-  justify-content: space-between; /* Separar los elementos a izquierda y derecha */
+  justify-content: space-between;
+  /* Separar los elementos a izquierda y derecha */
   align-items: center;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombras suaves */
   z-index: 1000;
 }
 
@@ -13,35 +16,54 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1920px; /* Ajuste de ancho para pantallas grandes */
+  max-width: 1500px;
+  /* Ajuste de ancho para pantallas grandes */
   list-style: none;
   padding: 15px;
   margin: 0;
+
 }
 
 .navListLeft {
   display: flex;
-  gap: 2rem; /* Espacio entre "Inicio" y "Biblioteca" */
+  gap: 2rem;
+  /* Espacio entre "Inicio" y "Biblioteca" */
   margin-left: 1rem;
-  flex-grow: 1; /* Ocupa todo el espacio disponible a la izquierda */
+  flex-grow: 1;
+  /* Ocupa todo el espacio disponible a la izquierda */
 }
 
 .navListRight {
   display: flex;
-  gap: 2rem; /* Espacio entre los enlaces */
+  gap: 2rem;
+  /* Espacio entre los enlaces */
   margin-right: 1rem;
-  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  justify-content: flex-end;
+  /* Alinea el contenido a la derecha */
 }
 
 /* Estilo para los enlaces */
-.navList a {
-  text-decoration: none;
+.navList ul a {
   color: rgb(92, 20, 52);
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .navList a:hover {
-  color: rgb(136, 30, 78); /* Color de hover */
+  color: rgb(136, 30, 78);
+  /* Color de hover */
+}
+
+.navListRight ul a {
+  color: rgb(92, 20, 52);
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navListLeft ul a {
+  color: rgb(92, 20, 52);
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 /* Logo centrado */
@@ -53,12 +75,16 @@
   left: 50%;
   transform: translateX(-50%);
   top: 5%;
+  z-index: 1000;
 }
 
 .logo img {
-  border-radius: 50%; /* Imagen del logo redonda */
-  border: 2px solid rgb(92, 20, 52); /* Borde alrededor del logo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombras en el logo */
+  border-radius: 50%;
+  /* Imagen del logo redonda */
+  border: 2px solid rgb(92, 20, 52);
+  /* Borde alrededor del logo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Sombras en el logo */
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -77,49 +103,59 @@
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 0;
   right: 0;
-  background-color: rgb(255, 231, 169); /* Fondo del menú desplegable */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  background-color: rgb(255, 231, 169);
+  /* Fondo del menú desplegable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombras suaves */
   padding: 1rem;
-  list-style: none;
+
 }
 
-.dropdownMenu li {
+.dropdownMenu ul {
   margin-bottom: 1rem;
 }
 
-.dropdownMenu li a {
+.dropdownMenu ul a {
   font-size: 1.5rem;
-  color: rgb(92, 20, 52); /* Color de los enlaces del menú */
+  color: rgb(92, 20, 52);
+  /* Color de los enlaces del menú */
+  text-decoration: none;
 }
 
-.dropdownMenu li a:hover {
-  color: rgb(136, 30, 78); /* Color hover en los enlaces del menú */
+.dropdownMenu ul a:hover {
+  color: rgb(136, 30, 78);
+  /* Color hover en los enlaces del menú */
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
   .navListRight {
-    display: none; /* Ocultar el menú normal en pantallas pequeñas */
+    display: none;
+    /* Ocultar el menú normal en pantallas pequeñas */
   }
+
   .navListLeft {
-    display: none; /* Ocultar el menú normal en pantallas pequeñas */
+    display: none;
+    /* Ocultar el menú normal en pantallas pequeñas */
   }
 
   .burgerMenu {
-    display: block; /* Mostrar botón de menú */
+    display: block;
+    /* Mostrar botón de menú */
   }
 
   .dropdownMenu {
-    display: flex; /* Mostrar menú desplegable */
+    display: flex;
+    /* Mostrar menú desplegable */
   }
 
   .logo {
     position: relative;
     transform: none;
-    margin: 1rem 0;
+    margin: -1.5rem 0;
   }
 
   .logo img {
@@ -130,7 +166,7 @@
   .navbar {
     padding: 2.3rem;
   }
-  
+
   .logo {
     display: flex;
     justify-content: center;
