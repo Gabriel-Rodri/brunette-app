@@ -1,45 +1,36 @@
-/* src/components/Navbar.module.css */
 .navbar {
   background-color: rgb(255, 231, 169); /* Fondo en tonos suaves */
   padding: 0.5rem 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Separar los elementos a izquierda y derecha */
   align-items: center;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
   z-index: 1000;
-  
 }
 
 .navList {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Ajuste de ancho para pantallas grandes */
+  max-width: 1920px; /* Ajuste de ancho para pantallas grandes */
   list-style: none;
   padding: 15px;
   margin: 0;
 }
 
-.navListLeft, .navListRight {
-  display: flex;
-  gap: 2rem; /* Espacio entre elementos */
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-size: 2rem;
-}
-/*  font-family: "Cookie", cursive;
-  font-size: 2.5rem;
-  font-style: normal;*/
-
-
 .navListLeft {
+  display: flex;
+  gap: 2rem; /* Espacio entre "Inicio" y "Biblioteca" */
   margin-left: 1rem;
+  flex-grow: 1; /* Ocupa todo el espacio disponible a la izquierda */
 }
 
 .navListRight {
+  display: flex;
+  gap: 2rem; /* Espacio entre los enlaces */
   margin-right: 1rem;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
 }
 
 /* Estilo para los enlaces */
@@ -47,7 +38,6 @@
   text-decoration: none;
   color: rgb(92, 20, 52);
   transition: color 0.3s ease;
-  border-width: 1px;
 }
 
 .navList a:hover {
@@ -74,17 +64,56 @@
   object-fit: cover;
 }
 
+/* Estilos para el botón de menú en pantallas pequeñas */
+.burgerMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.dropdownMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 231, 169); /* Fondo del menú desplegable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  padding: 1rem;
+  list-style: none;
+}
+
+.dropdownMenu li {
+  margin-bottom: 1rem;
+}
+
+.dropdownMenu li a {
+  font-size: 1.5rem;
+  color: rgb(92, 20, 52); /* Color de los enlaces del menú */
+}
+
+.dropdownMenu li a:hover {
+  color: rgb(136, 30, 78); /* Color hover en los enlaces del menú */
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
-  .navList {
-    flex-direction: column;
-    align-items: center;
+  .navListRight {
+    display: none; /* Ocultar el menú normal en pantallas pequeñas */
+  }
+  .navListLeft {
+    display: none; /* Ocultar el menú normal en pantallas pequeñas */
   }
 
-  .navListLeft, .navListRight {
-    gap: 1rem;
-    justify-content: center;
-    margin: 0;
+  .burgerMenu {
+    display: block; /* Mostrar botón de menú */
+  }
+
+  .dropdownMenu {
+    display: flex; /* Mostrar menú desplegable */
   }
 
   .logo {
@@ -99,7 +128,16 @@
   }
 
   .navbar {
-    padding: 1rem;
+    padding: 2.3rem;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 2.1rem;
   }
 }
-

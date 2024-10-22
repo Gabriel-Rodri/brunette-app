@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import CarouselCard from '../components/CarouselCard';
 import Button from '../components/Button';
 import styles from './Home.module.css';
+import cartshopping from '../component-images/shopping-cart.png'
 
 const Home = () => {
   const productos = [
@@ -66,7 +67,7 @@ const Home = () => {
         'https://via.placeholder.com/300x200?text=Producto+2+-+2',
         'https://via.placeholder.com/300x200?text=Producto+2+-+3',
       ]
-    },    {
+    }, {
       id: 7,
       titulo: 'Producto 1',
       precio: '$100',
@@ -125,7 +126,7 @@ const Home = () => {
         'https://via.placeholder.com/300x200?text=Producto+2+-+2',
         'https://via.placeholder.com/300x200?text=Producto+2+-+3',
       ]
-    },    {
+    }, {
       id: 13,
       titulo: 'Producto 1',
       precio: '$100',
@@ -184,7 +185,7 @@ const Home = () => {
         'https://via.placeholder.com/300x200?text=Producto+2+-+2',
         'https://via.placeholder.com/300x200?text=Producto+2+-+3',
       ]
-    },    {
+    }, {
       id: 19,
       titulo: 'Producto 1',
       precio: '$100',
@@ -244,7 +245,7 @@ const Home = () => {
         'https://via.placeholder.com/300x200?text=Producto+2+-+3',
       ]
     },
-    
+
   ];
 
   return (
@@ -263,6 +264,16 @@ const Home = () => {
       <div className={styles.buttonContainer}>
         <Link to="/formulario" className={styles.customOrderButton}>
           Pedido Personalizado
+        </Link>
+      </div>
+      <div>
+
+        <Link to="/formulario" className={styles.cartButton}>
+        <img
+            src={cartshopping}
+            alt="WhatsApp"
+            className={styles.cartshopping}
+          />
         </Link>
       </div>
 
