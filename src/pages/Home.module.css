@@ -1,0 +1,65 @@
+/* src/pages/Home.module.css */
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Espacio entre los elementos */
+  padding: 4rem;
+  background-color:#fff6e4;
+}
+
+/* Distribución de las cards responsivas */
+.carouselCard {
+  flex: 1 1 calc(33.333% - 1rem); /* Tres columnas en pantallas grandes */
+  max-width: 350px; /* Ancho máximo para cada card */
+}
+
+@media (max-width: 1024px) {
+  .carouselCard {
+    flex: 1 1 calc(50% - 1rem); /* Dos columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselCard {
+    flex: 1 1 100%; /* Una columna en pantallas pequeñas */
+  }
+}
+
+/* Botón "Pedido personalizado" fijo en la parte inferior central */
+.buttonContainer {
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* Botón "Pedido personalizado" */
+.customOrderButton {
+  padding: 1rem 2rem;
+  background-color: rgb(92,20,52);
+  color:rgba(254,251,243,255);
+  border: none;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 1.7rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.customOrderButton:hover {
+  background-color: rgb(136, 30, 78);
+}
+
+/* Botón de componente Button en la parte inferior derecha */
+.fixedButton {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1000;  
+
+}

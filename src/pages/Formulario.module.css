@@ -1,0 +1,100 @@
+/* src/pages/Formulario.module.css */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff6e4;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: "Caveat", cursive;
+  font-size: 36px;
+  color: rgb(92, 20, 52);
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(92, 20, 52);
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input, 
+.formGroup select, 
+.formGroup textarea {
+  padding: 0.8rem;
+  font-size: 16px;
+  border: 2px solid rgb(92, 20, 52);
+  border-radius: 8px;
+  background-color: rgba(254, 251, 243, 255);
+  font-family: "Arial", sans-serif;
+}
+
+.formGroup input:focus, 
+.formGroup select:focus, 
+.formGroup textarea:focus {
+  outline: none;
+  border-color: rgb(136, 30, 78);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botón Enviar */
+.submitButton {
+  background-color: rgb(92, 20, 52);
+  color: rgba(254, 251, 243, 255);
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+.submitButton:hover {
+  background-color: rgb(136, 30, 78);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .formGroup input, 
+  .formGroup select, 
+  .formGroup textarea {
+    font-size: 14px;
+    padding: 0.6rem;
+  }
+
+  .submitButton {
+    font-size: 22px;
+  }
+}

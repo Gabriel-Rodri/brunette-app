@@ -1,0 +1,40 @@
+/* src/components/CarouselCard.module.css */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carouselButton:hover {
+  color: #333;
+}
+
+.carouselButton:first-of-type {
+  left: 10px;
+}
+
+.carouselButton:last-of-type {
+  right: 10px;
+}
