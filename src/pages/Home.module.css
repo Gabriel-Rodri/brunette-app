@@ -26,6 +26,7 @@
     flex: 1 1 calc(60% - 1rem);
     /* Dos columnas en pantallas medianas */
   }
+
   .cartButton {
     display: none;
   }
@@ -37,36 +38,10 @@
   }
 
   .customOrderButton {
-    display: none;
+
   }
-
-  .cartButton {
-    display: flex;
-    align-items: center;
-    color: white;
-    border-radius: 100px;
-    padding: 18px 18px;
-    background-color: rgb(92,20,52);
-    transition: background-color 0.5s ease;
-    position: fixed;
-    bottom: 17%;
-    right: 5%;
-    z-index: 1000;
-  }
-
-
-  /* Efecto hover */
-  .cartButton:hover {
-    background-color: rgb(136, 30, 78);
-    /* Cambia el color al hacer hover */
-  }
-
-  .cartshopping {
-    width: 45px;
-    height: 45px;
-  }
-
 }
+
 
 /* Botón "Pedido personalizado" fijo en la parte inferior central */
 .buttonContainer {
@@ -83,16 +58,18 @@
   background-color: rgb(92, 20, 52);
   color: rgba(254, 251, 243, 255);
   border: none;
-  font-family: "Amita", serif;
-  font-weight: 700;
+  font-family: "Quintessential", serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
+
+
 
 .customOrderButton:hover {
   background-color: rgb(136, 30, 78);

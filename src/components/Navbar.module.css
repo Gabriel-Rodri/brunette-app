@@ -51,20 +51,20 @@
   color: rgb(92, 20, 52);
   transition: color 0.3s ease;
   text-decoration: none;
-  font-family: "Amita", serif;
+  font-family: "Quintessential", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .navListLeft ul a {
   color: rgb(92, 20, 52);
   transition: color 0.3s ease;
   text-decoration: none;
-  font-family: "Amita", serif;
+  font-family: "Quintessential", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 /* Logo centrado */

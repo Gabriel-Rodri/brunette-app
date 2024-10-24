@@ -268,16 +268,7 @@ const Home = () => {
       </div>
       <div>
 
-        <Link to="/formulario" className={styles.cartButton}>
-        <img
-            src={cartshopping}
-            alt="WhatsApp"
-            className={styles.cartshopping}
-          />
-        </Link>
       </div>
-
-      {/* Botón fijo en la esquina inferior derecha */}
       <div className={styles.fixedButton}>
         <Button />
       </div>
