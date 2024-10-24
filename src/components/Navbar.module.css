@@ -1,14 +1,11 @@
 .navbar {
   background-color: rgb(255, 231, 169);
-  /* Fondo en tonos suaves */
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
-  /* Separar los elementos a izquierda y derecha */
   align-items: center;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombras suaves */
   z-index: 1000;
 }
 
@@ -17,29 +14,24 @@
   align-items: center;
   width: 100%;
   max-width: 1500px;
-  /* Ajuste de ancho para pantallas grandes */
   list-style: none;
   padding: 15px;
   margin: 0;
-
 }
 
 .navListLeft {
   display: flex;
   gap: 2rem;
-  /* Espacio entre "Inicio" y "Biblioteca" */
   margin-left: 1rem;
   flex-grow: 1;
-  /* Ocupa todo el espacio disponible a la izquierda */
+ 
 }
 
 .navListRight {
   display: flex;
   gap: 2rem;
-  /* Espacio entre los enlaces */
   margin-right: 1rem;
   justify-content: flex-end;
-  /* Alinea el contenido a la derecha */
 }
 
 /* Estilo para los enlaces */
@@ -47,6 +39,7 @@
   color: rgb(92, 20, 52);
   transition: color 0.3s ease;
   text-decoration: none;
+
 }
 
 .navList a:hover {
@@ -58,12 +51,20 @@
   color: rgb(92, 20, 52);
   transition: color 0.3s ease;
   text-decoration: none;
+  font-family: "Amita", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
 }
 
 .navListLeft ul a {
   color: rgb(92, 20, 52);
   transition: color 0.3s ease;
   text-decoration: none;
+  font-family: "Amita", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
 }
 
 /* Logo centrado */

@@ -79,13 +79,14 @@
 
 /* Botón "Pedido personalizado" */
 .customOrderButton {
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.3rem;
   background-color: rgb(92, 20, 52);
   color: rgba(254, 251, 243, 255);
   border: none;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-size: 1.7rem;
+  font-family: "Amita", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
