@@ -37,31 +37,36 @@
     flex: 1 1 40% - 1rem;
   }
 
-  .customOrderButton {
-
+  .buttonContainer {
+    position: fixed;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-60%);
+    z-index: 1000;
   }
+
 }
 
 
 /* Botón "Pedido personalizado" fijo en la parte inferior central */
 .buttonContainer {
   position: fixed;
-  bottom: 7%;
+  bottom: 8%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-70%);
   z-index: 1000;
 }
 
 /* Botón "Pedido personalizado" */
 .customOrderButton {
-  padding: 0.7rem 1.3rem;
+  padding: 0.6rem 0.5rem;
   background-color: rgb(92, 20, 52);
   color: rgba(254, 251, 243, 255);
   border: none;
   font-family: "Quintessential", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
